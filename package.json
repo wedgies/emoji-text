@@ -1,0 +1,31 @@
+{
+  "name": "emoji-text",
+  "version": "1.0.0",
+  "description": "Convert emoji to accessible text-only descriptions",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wedgies/emoji-text.git"
+  },
+  "keywords": [
+    "text",
+    "emoji",
+    "convert",
+    "accessibility"
+  ],
+  "author": "Pawel Szymczykowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wedgies/emoji-text/issues"
+  },
+  "homepage": "https://github.com/wedgies/emoji-text",
+  "dependencies": {
+    "gemoji": "^0.2.2"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.1"
+  }
+}
