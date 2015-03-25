@@ -1,6 +1,6 @@
 {
   "name": "emoji-text",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Convert emoji to accessible text-only descriptions",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,10 @@
     "convert",
     "accessibility"
   ],
-  "author": "Pawel Szymczykowski",
+  "author": {
+    "name": "Wedgies, Inc.",
+    "web": "https://github.com/wedgies/"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/wedgies/emoji-text/issues"
