@@ -46,15 +46,14 @@ The string to convert, expected to have emoji encoded as UTF-8.
 
 The data object comes from [wemoji](https://www.npmjs.com/package/wemoji) and looks like this:
 
-```json
-{ emoji: '🐉',
+```javascript
+{ emoji: '🏩',
   platforms: [ 'tw', 'a', 'g' ],
-  description: 'DRAGON',
-  name: 'dragon',
-  css: 'dragon',
-  category: 'animal' }
+  description: 'LOVE HOTEL',
+  name: 'love_hotel',
+  css: 'love_hotel',
+  category: 'travel' }
 ```
-
 
 ## Install
 
