@@ -6,13 +6,13 @@ Converts emoji in a string into textual descriptions.
 
 ```javascript
 	var emojiText = require("emoji-text");
-  
+
 	emojiText.convert("🐱🐶"); // "[cat][dog]"
-  
+
 	emojiText.convert("🐔 🌵", {
   	delimeter: ':'
 	}); // ":chicken: :cactus:"
-  
+
 	emojiText.convert("👻 🐴", {
 		callback: function(emoji,data) {
 			return "%" + data.description.toUpperCase() + "%";
@@ -44,16 +44,15 @@ The string to convert, expected to have emoji encoded as UTF-8.
 
 ### data
 
-The data object comes from [gemoji](https://www.npmjs.com/package/gemoji) and looks like this:
+The data object comes from [wemoji](https://www.npmjs.com/package/wemoji) and looks like this:
 
 ```json
-{
-  "description": "pile of poo",
-  "names": ["hankey", "poop", "shit"],
-  "tags": ["crap"],
-  "name": "hankey",
-  "emoji": "💩"
-}
+{ emoji: '🐉',
+  platforms: [ 'tw', 'a', 'g' ],
+  description: 'DRAGON',
+  name: 'dragon',
+  css: 'dragon',
+  category: 'animal' }
 ```
 
 
@@ -68,3 +67,5 @@ npm install emoji-text
 ## License
 
 ISC
+
+[![Built with Wedgies](https://d3v9r9uda02hel.cloudfront.net/production/1.55.17/img/built-with-wedgies.png)](http://wedgies.com)

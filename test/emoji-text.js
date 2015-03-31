@@ -13,7 +13,7 @@ describe('emoji-text', function(){
       delimiter: ':',
       field: 'description'
     });
-    assert.equal(text,":chicken: :cactus:");
+    assert.equal(text,":CHICKEN: :CACTUS:");
   });
 
   it('should respect before and after', function(){
@@ -21,7 +21,7 @@ describe('emoji-text', function(){
       before: '{',
       after: '}'
     });
-    assert.equal(text,"{fr} {fries}");
+    assert.equal(text,"{flag-fr} {fries}");
   });
 
   it('should support a custom callback', function(){

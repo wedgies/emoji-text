@@ -1,6 +1,6 @@
 {
   "name": "emoji-text",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Convert emoji to accessible text-only descriptions",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,8 @@
     "url": "https://github.com/wedgies/emoji-text.git"
   },
   "keywords": [
-    "text",
     "emoji",
+    "text",
     "convert",
     "accessibility"
   ],
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/wedgies/emoji-text",
   "dependencies": {
-    "gemoji": "^0.2.2"
+    "wemoji": "^0.1.7"
   },
   "devDependencies": {
     "mocha": "^2.2.1"

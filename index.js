@@ -1,7 +1,7 @@
-var gemoji = require('gemoji');
+var wemoji = require('wemoji');
 
 // Regex for replacing
-var pattern = new RegExp(Object.keys( gemoji.unicode ).join('|'), 'g');
+var pattern = new RegExp(Object.keys( wemoji.unicode ).join('|'), 'g');
 var defaults = {
   before: '[',
   after: ']',
@@ -18,9 +18,9 @@ module.exports.convert = function (str, options) {
 
   return str.replace(pattern, function(val) {
     if (options.callback) {
-      return options.callback(val, gemoji.unicode[ val ]);
+      return options.callback(val, wemoji.unicode[ val ]);
     } else {
-      return before + gemoji.unicode[ val ][ field ] + after;
+      return before + wemoji.unicode[ val ][ field ] + after;
     }
   });
 }
