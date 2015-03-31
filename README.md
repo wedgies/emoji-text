@@ -15,9 +15,9 @@ Converts emoji in a string into textual descriptions.
 
 	emojiText.convert("👻 🐴", {
 		callback: function(emoji,data) {
-			return "%" + data.description.toUpperCase() + "%";
+			return "%" + data.description.toLowerCase() + "%";
 		}
-	}); // "%GHOST% %HORSE FACE%"
+	}); // "%ghost% %horse face%"
 ```
 
 ## Parameters
