@@ -8,12 +8,17 @@ var defaults = {
   field: 'name'
 };
 
-
 module.exports.convert = function (str, options) {
   if (options == null) options = {};
 
-  var before = options.delimiter || options.before || defaults.before;
-  var after = options.delimiter || options.after || defaults.after;
+  var before, after
+  if ( 'delimiter' in options ) {
+    before = options.delimiter
+    after  = options.delimiter
+  } else {
+    before = 'before' in options ? options.before : defaults.before
+    after = 'after' in options ? options.after : defaults.after
+  }
   var field = options.field || defaults.field;
 
   return str.replace(pattern, function(val) {

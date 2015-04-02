@@ -16,6 +16,14 @@ describe('emoji-text', function(){
     assert.equal(text,":CHICKEN: :CACTUS:");
   });
 
+  it('should support empty delimiters', function(){
+    var text = emojiText.convert("🐔 🌵", {
+      delimiter: '',
+      field: 'description'
+    });
+    assert.equal(text,"CHICKEN CACTUS");
+  });
+
   it('should respect before and after', function(){
     var text = emojiText.convert("🇫🇷 🍟", {
       before: '{',
@@ -32,6 +40,17 @@ describe('emoji-text', function(){
     });
     assert.equal(text,"%GHOST% %HORSE FACE%");
   });
+
+  it('should work with this particular string I found with variants', function() {
+    var text = emojiText.convert("▶↪♻✅⛔✳❗");
+    assert.equal(text,"[arrow_forward][arrow_right_hook][recycle][white_check_mark][no_entry][eight_spoked_asterisk][exclamation]");
+  });
+
+  it('should work equally well with the other versions of those variants', function() {
+    var text = emojiText.convert("▶️↪️♻️✅⛔️✳️❗️");
+    assert.equal(text,"[arrow_forward][arrow_right_hook][recycle][white_check_mark][no_entry][eight_spoked_asterisk][exclamation]");
+  });
+
 
 
 });
