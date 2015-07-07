@@ -9,7 +9,7 @@ var defaults = {
 };
 
 module.exports.convert = function (str, options) {
-  if (typeof str !== ‘string’) {
+  if (typeof str !== 'string') {
     return str;
   }
 
