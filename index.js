@@ -9,6 +9,10 @@ var defaults = {
 };
 
 module.exports.convert = function (str, options) {
+  if (typeof str !== 'string') {
+    return str;
+  }
+
   if (options == null) options = {};
 
   var before, after
