@@ -1,6 +1,6 @@
 {
   "name": "emoji-text",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Convert emoji to accessible text-only descriptions",
   "main": "index.js",
   "scripts": {
