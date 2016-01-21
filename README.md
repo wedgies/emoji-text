@@ -36,7 +36,7 @@ The string to convert, expected to have emoji encoded as UTF-8.
 {
 	before: '[', // character to use before field
 	after: ']', // character to use after field
-	delimeter: ':', // shortcut to set before + after to same char
+	delimiter: ':', // shortcut to set before + after to same char
 	field: 'name', // field to use name, description or emoji,
 	callback: function(emoji, data) {} // custom conversion callback
 }
