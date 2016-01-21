@@ -10,7 +10,7 @@ Converts emoji in a string into textual descriptions.
 	emojiText.convert("🐱🐶"); // "[cat][dog]"
 
 	emojiText.convert("🐔 🌵", {
-  	delimeter: ':'
+  	delimiter: ':'
 	}); // ":chicken: :cactus:"
 
 	emojiText.convert("👻 🐴", {
