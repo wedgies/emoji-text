@@ -1,7 +1,9 @@
 var wemoji = require('wemoji');
-
+var matchOperatorsRe = /[|\\{}()[\]^$+*?.]/g;
 // Regex for replacing
-var pattern = new RegExp(Object.keys( wemoji.unicode ).join('|'), 'g');
+var pattern = new RegExp(Object.keys( wemoji.unicode ).map(function(emoji){
+    return emoji.replace(matchOperatorsRe, '\\$&');
+}).join('|'), 'g');
 var defaults = {
   before: '[',
   after: ']',
