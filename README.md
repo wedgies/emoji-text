@@ -1,5 +1,11 @@
 # Emoji-Text
 
+## Unmaintained Notice ##
+
+This code is not currently maintained. Feel free to fork away!
+
+## Description
+
 Converts emoji in a string into textual descriptions.
 
 ## Examples
